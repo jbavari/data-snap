@@ -10,8 +10,8 @@
     #datachomp-box {
       background: white;
       position: relative;
-      height: 500px;
-      width: 500px;
+      height: 200px;
+      width: 310px;
     }
   </style>
   <script src="snap/dist/snap.svg-min.js"></script>
@@ -39,6 +39,7 @@
     </svg>
 
   </div>
+  <button id="tossIt">Toss keg</button>
   <script>
     window.onload = function () {
       // var croc = Snap.select("#crocodile"),
@@ -71,7 +72,9 @@
         // bottom_jaw.animate({transform: j2Amt}, 500, mina.easein);
       }
 
-      tossKeg();
+      // tossKeg();
+
+      document.getElementById('tossIt').onclick = tossKeg;
     }
   </script>
 </body>
